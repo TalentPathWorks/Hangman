@@ -29,7 +29,9 @@ for (let i = 0; i < emptyArray.length; i++) {
 }
 // Stores user input
 let characterInput;
-
+console.clear();
+console.log('***Javascript Hangman***');
+console.log(`The following word has ${size} letters.`);
 while (correctLetters < letters.length && gameTries !== 0) {
   // Printing empty word to screen
   console.log(emptyArray);
@@ -50,8 +52,8 @@ while (correctLetters < letters.length && gameTries !== 0) {
     }
     // Check if they guessed right
     if (!guessedRight) {
-      console.log(`You guessed WRONG. You have: ${gameTries} tries left. `);
       gameTries -= 1;
+      console.log(`You guessed WRONG. You have: ${gameTries} tries left. `);
     } else {
       console.log('Correct!');
     }
