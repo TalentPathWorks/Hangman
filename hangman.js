@@ -17,23 +17,13 @@ while (continueToPlay) {
   // See if its a successful guess
   let guessedRight = false;
   // Creates a random integer to select from the array from.
-  // eslint-disable-next-line prefer-const
-  let randomInt = Math.floor(Math.random() * words.length);
+  const randomInt = Math.floor(Math.random() * words.length);
   // Choose a random word
-  // eslint-disable-next-line prefer-const
-  let wordChoosen = words[randomInt];
+  const wordChoosen = words[randomInt];
   // Create an array to compare to
-  // eslint-disable-next-line prefer-const
-  let letters = wordChoosen.split('');
-  // eslint-disable-next-line prefer-const
-  let size = letters.length;
-  // eslint-disable-next-line prefer-const
-
-  const emptyArray = new Array(size);
-  // Initializing empty array for printing on screen
-  for (let i = 0; i < emptyArray.length; i++) {
-    emptyArray[i] = '_';
-  }
+  const letters = wordChoosen.split('');
+  const size = letters.length;
+  const emptyArray = new Array(size).fill('_');
   // Stores user input
   let characterInput;
   console.clear();
@@ -41,7 +31,7 @@ while (continueToPlay) {
   console.log(`The following word has ${size} letters.`);
   while (correctLetters < letters.length && gameTries !== 0) {
     // Printing empty word to screen
-    console.log(emptyArray);
+    console.log(emptyArray.join(' '));
     // Take in word from user
     characterInput = readlineSync.question('Guess a letter: ');
     // Check if letter is already guessed
