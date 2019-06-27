@@ -13,11 +13,11 @@ On console run the following command`npm install` in the Hangman directory to be
 
 * **Guessing words**
 
-  ![Screenshot](/home/rsanchez/Pictures/screenshotOfGame.png)
+  ![Screenshot](https://github.com/Zyxel-1/Hangman/blob/Docs/Documentation/ReadMeResources/screenshotOfGame.png)
 
 * **Re-playability**
 
-  ![](/home/rsanchez/Github/Hangman/Documentation/ReadMeResources/winning.gif)
+  ![WinningGif](https://github.com/Zyxel-1/Hangman/blob/Docs/Documentation/ReadMeResources/winning.gif)
 
   
   
